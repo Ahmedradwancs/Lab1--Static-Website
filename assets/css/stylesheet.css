@@ -1,0 +1,170 @@
+/* Reset some default styles */
+body, h1, h2, h3, ul, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul li a {
+    font-size: 14px;
+}
+
+
+
+.shopping-cart {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+nav ul li.shopping-cart {
+    margin-right: 0; /* Remove right margin for shopping cart */
+}
+
+.shopping-cart a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.book-section {
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 30%;
+    margin: 0 20px 20px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-section h2 {
+    text-align: center;
+}
+
+.book:hover {
+    transform: scale(1.02);
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.items {
+    list-style: none;
+}
+
+.items li {
+    margin-bottom: 5px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.buy-button {
+    background-color: #4CAF50; /* Green background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+    background-color: #f5caca;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content {
+    max-width: 1200px; /* Adjust the max-width according to your design */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
+    width: 100%;
+}
+
+.contact-info,
+.additional-links,
+.social-media {
+    flex: 1;
+    text-align: left;
+}
+
+.additional-links {
+    margin-top: 10px; /* Adjust spacing between sections */
+}
+
+.additional-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.additional-links li {
+    margin-bottom: 5px;
+}
