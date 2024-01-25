@@ -10,18 +10,48 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #9a7575;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
+.welcome-message {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.logo-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-search h1 {
+    margin-right: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    margin-right: 10px;
+}
+
 nav {
-    position: relative;
+    text-align: center;
 }
 
 nav ul {
-    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
 }
 
 nav ul li {
@@ -53,22 +83,14 @@ nav ul ul li a {
     font-size: 14px;
 }
 
-
-
 .shopping-cart {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
-nav ul li.shopping-cart {
-    margin-right: 0; /* Remove right margin for shopping cart */
+    margin-left: auto;
 }
 
 .shopping-cart a {
     text-decoration: none;
-    color: #fff;
-    font-size: 18px;
+    color: #faf5fd;
+    font-size: 25px;
 }
 
 main {
@@ -116,7 +138,7 @@ img {
 }
 
 .buy-button {
-    background-color: #4CAF50; /* Green background color */
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -126,45 +148,58 @@ img {
 }
 
 .buy-button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
 }
 
 footer {
-    background-color: #f5caca;
+    background-color: #9a7575;
     color: #333;
     text-align: center;
     padding: 10px;
     bottom: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .footer-content {
-    max-width: 1200px; /* Adjust the max-width according to your design */
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Align items vertically in the center */
-    width: 100%;
 }
 
 .contact-info,
-.additional-links,
+.terms,
 .social-media {
-    flex: 1;
     text-align: left;
+    color: black;
+    flex: 1;
 }
 
-.additional-links {
-    margin-top: 10px; /* Adjust spacing between sections */
+.terms {
+    margin-top: 10px;
 }
 
-.additional-links ul {
+.terms ul {
     list-style: none;
     padding: 0;
 }
 
-.additional-links li {
+.terms li {
     margin-bottom: 5px;
+}
+
+#copyright {
+    color: #333;
+    text-decoration: none;
+}
+
+.policy {
+    color: #0a0a0a;
+    font-style: normal;
+    font-size: medium;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: ;
 }
