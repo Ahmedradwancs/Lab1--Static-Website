@@ -8,18 +8,11 @@
 </head>
 <body>
     <header>
-        <h1> Welcome to Egypt's Web</h1>
-        <div class="logo-search">
-            <!-- Text Logo -->
-            <h2>Egypt's Web</h2>
-            <!-- Search Bar -->
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="button">Search</button>
-            </div>
-        </div>
+        <h1>Welcome to Egypt's Web</h1>
         <nav> 
             <ul>
+                <li><h2 id="logo">Egypt's Web</h2>
+                </li>
                 <li><a href="#">Main menu</a></li>
                 <li>
                     <a href="#">Categories</a>
@@ -30,8 +23,13 @@
                         <li><a href="#ux-books">UX Books</a></li>
                     </ul>
                 </li>
-                <li class="shopping-cart"><a href="./shoppingCart.html" target="_blank"><i class="fas fa-shopping-cart"></i> Cart</a></li>
                 <li><a href="#">Contact us</a></li>
+                <li>
+                    <div id="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button type="button">Search</button>
+                    </div></li>
+                <li id="shopping-cart"><a href="./shoppingCart.html" target="_blank"><i class="fas fa-shopping-cart"></i> Cart</a></li>
             </ul>
         </nav>
     </header>
@@ -74,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="book-section">
+        <!-- <section class="book-section">
             <h2>CSS books</h2>
             <div class="container">
                 <div class="book">
@@ -187,7 +185,7 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
         <div class="footer-content">
@@ -198,11 +196,9 @@
                 <p>Address: Tahrrir sq, Cairo, Egypt</p>
             </div>
             <div class="terms">
-                <a href="#" class="policy">&#8226 Terms of Service</a>
-                <a href="#" class="policy">&#8226 Privacy Policy</a>
-                <div id="copyright">
-                    <br> &copy;2024 Egypt's Web
-                </div>
+                <a href="#" class="policy">&#8226; Terms of Service</a>
+                <a href="#" class="policy">&#8226; Privacy Policy</a>
+                <div id="copyright">&copy;2024 Egypt's Web</div>
             </div>
             <div class="social-media">
                 <h2>Connect with us</h2>
@@ -212,8 +208,7 @@
                     <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
                 </ul>
             </div>
-
         </div>
-    </footer>    
+    </footer>
 </body>
 </html>

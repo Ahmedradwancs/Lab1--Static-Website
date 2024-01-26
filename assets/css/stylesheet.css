@@ -1,97 +1,101 @@
-/* Reset some default styles */
-body, h1, h2, h3, ul, p, img {
-    margin: 0;
-    padding: 0;
-}
+       /* Reset some default styles */
+    body, h1, h2, h3, ul, p, img {
+        margin: 0;
+        padding: 0;
+    }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+    }
 
-header {
-    background-color: #9a7575;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+    header {
+        background-color: #4a4a4a;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    h1, h2 {
+        margin: 0;
+    }
+    
 
-.welcome-message {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+    #logo{
+        margin-right: 50px;
+    }
+    #search-bar {
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+    }
+    
+    #search-bar input {
+        margin-right: 10px;
+        margin-left: 130px;
+    }
+    
+    #shopping-cart {
+        margin-left: auto;
+    }
+    
+    #shopping-cart a {
+        text-decoration: none;
+        color: #faf5fd;
+        font-size: 16px;
+    }
+    nav {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        font-size:large;
+        font-weight: bold;
+        align-items: center;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav li:last-child {
+        margin-right: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    nav ul li:hover ul {
+        display: block;
+    }
+    
+    nav ul ul {
+        display: none;
+        position: absolute;
+        background-color: #333;
+    }
+    
+    nav ul ul li {
+        display: block;
+    }
+    
+    nav ul ul li a {
+        font-size: 14px;
+    }
+    
 
-.logo-search {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.logo-search h1 {
-    margin-right: 20px;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-}
-
-.search-bar input {
-    margin-right: 10px;
-}
-
-nav {
-    text-align: center;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-}
-
-nav ul li:hover ul {
-    display: block;
-}
-
-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: #333;
-}
-
-nav ul ul li {
-    display: block;
-}
-
-nav ul ul li a {
-    font-size: 14px;
-}
-
-.shopping-cart {
-    margin-left: auto;
-}
-
-.shopping-cart a {
-    text-decoration: none;
-    color: #faf5fd;
-    font-size: 25px;
-}
 
 main {
     padding: 20px;
@@ -152,12 +156,10 @@ img {
 }
 
 footer {
-    background-color: #9a7575;
-    color: #333;
+    background-color: #4a4a4a;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
 }
 
 .footer-content {
@@ -171,7 +173,7 @@ footer {
 .terms,
 .social-media {
     text-align: left;
-    color: black;
+    color: #fff;
     flex: 1;
 }
 
@@ -179,27 +181,38 @@ footer {
     margin-top: 10px;
 }
 
-.terms ul {
+.policy{
+    margin: 10px;
+}
+
+.terms a {
+    color: #faf5fd;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#copyright {
+    color: #faf5fd;
+    margin-top: 40px;
+    margin-left: 65px;
+}
+
+.social-media h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.social-media ul {
     list-style: none;
     padding: 0;
 }
 
-.terms li {
+.social-media li {
     margin-bottom: 5px;
 }
 
-#copyright {
-    color: #333;
-    text-decoration: none;
-}
-
-.policy {
-    color: #0a0a0a;
-    font-style: normal;
-    font-size: medium;
-}
-
 .social-media a {
+    color: #faf5fd;
     text-decoration: none;
-    color: ;
+    font-size: 16px;
 }
