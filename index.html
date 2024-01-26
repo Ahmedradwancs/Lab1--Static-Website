@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Egypt's Web</h1>
+        <h1>Welcome to Egypt's Bookshop</h1>
         <nav> 
             <ul>
-                <li><h2 id="logo">Egypt's Web</h2>
-                </li>
-                <li><a href="#">Main menu</a></li>
+            <li><h2 id="logo"><a href="./index.html">Egypt's Bookshop</a></h2></li>
+            </li>
+                <li><a href="#">Home</a></li>
                 <li>
                     <a href="#">Categories</a>
                     <ul>
@@ -29,26 +29,26 @@
                         <input type="text" placeholder="Search...">
                         <button type="button">Search</button>
                     </div></li>
-                <li id="shopping-cart"><a href="./shoppingCart.html" target="_blank"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li id="shopping-cart"><a href="./shoppingCart.html" target="_blank"> Cart</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="book-section">
-            <h2>HTML books</h2>
+        <div class="filter">
+            <label for="html-sort" id="sort">Sort by:</label>
+            <select id="html-sort">
+                <option value="price">Price</option>
+                <!-- Add more options for other filters if needed -->
+            </select>
+        </div>
+        <section class="book-section" id="html-books">
+            <h2 id="section-title"> <span>HTML books</span></h2>
                 <!-- Filter Dropdown for Sorting -->
-                <div class="filter">
-                    <label for="html-sort">Sort by:</label>
-                    <select id="html-sort">
-                        <option value="price">Price</option>
-                        <!-- Add more options for other filters if needed -->
-                    </select>
-                </div>
             <div class="container">
                 <div class="book">
                     <h3 class="title">Book 1</h3>
                     <ul class="items">
-                        <li><img src="https://placehold.co/50x50" alt="Book image"></li>
+                        <li><img src="./assets/img/html (1).jpg" alt="Book image"></li>
                         <li>Author's name</li>
                         <li>Page numbers</li>
                         <li>Price: $20</li>
@@ -59,10 +59,10 @@
                 <div class="book">
                     <h3 class="title">Book 2</h3>
                     <ul class="items">
-                        <li><img src="https://placehold.co/50x50" alt="Book image"></li>
+                        <li><img src="./assets/img/html (2).jpg" alt="Book image"></li>
                         <li>Author's name</li>
                         <li>Page numbers</li>
-                        <li>Price: $20</li>
+                        <li>Price: $30</li>
                         <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                         <li><button class="buy-button">Buy</button></li>
                     </ul>
@@ -70,17 +70,134 @@
                 <div class="book">
                     <h3 class="title">Book 3</h3>
                     <ul class="items">
-                        <li><img src="https://placehold.co/50x50" alt="Book image"></li>
+                        <li><img src="./assets/img/html (3).jpg" alt="Book image"></li>
                         <li>Author's name</li>
                         <li>Page numbers</li>
-                        <li>Price: $20</li>
+                        <li>Price: $45</li>
                         <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                         <li><button class="buy-button">Buy</button></li>
                     </ul>
                 </div>
             </div>
-        <!-- </section>
-        <section class="book-section">
+        </section>
+        <section class="book-section" id="css-books">
+            <h2 id="section-title"> <span>CSS books</span></h2>
+                <!-- Filter Dropdown for Sorting -->
+            <div class="container">
+                <div class="book">
+                    <h3 class="title">Book 1</h3>
+                    <ul class="items">
+                        <li><img src="./assets/img/CSS1.png" alt="Book image"></li>
+                        <li>Author's name</li>
+                        <li>Page numbers</li>
+                        <li>Price: $28</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li><button class="buy-button">Buy</button></li>
+                    </ul>
+                </div>
+                <div class="book">
+                    <h3 class="title">Book 2</h3>
+                    <ul class="items">
+                        <li><img src="./assets/img/CSS2.png" alt="Book image"></li>
+                        <li>Author's name</li>
+                        <li>Page numbers</li>
+                        <li>Price: $40</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li><button class="buy-button">Buy</button></li>
+                    </ul>
+                </div>
+                <div class="book">
+                    <h3 class="title">Book 3</h3>
+                    <ul class="items">
+                        <li><img src="./assets/img/CSS3.jpg" alt="Book image"></li>
+                        <li>Author's name</li>
+                        <li>Page numbers</li>
+                        <li>Price: $45</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li><button class="buy-button">Buy</button></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="book-section" id="javascript-books">
+            <h2 id="section-title"> <span>JavaScript books</span></h2>
+                <!-- Filter Dropdown for Sorting -->
+            <div class="container">
+                <div class="book">
+                    <h3 class="title">Book 1</h3>
+                    <ul class="items">
+                        <li><img src="./assets/img/JS (1).jpg" alt="Book image"></li>
+                        <li>Author's name</li>
+                        <li>Page numbers</li>
+                        <li>Price: $25</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li><button class="buy-button">Buy</button></li>
+                    </ul>
+                </div>
+                <div class="book">
+                    <h3 class="title">Book 2</h3>
+                    <ul class="items">
+                        <li><img src="./assets/img/JS (2).jpg" alt="Book image"></li>
+                        <li>Author's name</li>
+                        <li>Page numbers</li>
+                        <li>Price: $35</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li><button class="buy-button">Buy</button></li>
+                    </ul>
+                </div>
+                <div class="book">
+                    <h3 class="title">Book 3</h3>
+                    <ul class="items">
+                        <li><img src="./assets/img/JS (1).webp" alt="Book image"></li>
+                        <li>Author's name</li>
+                        <li>Page numbers</li>
+                        <li>Price: $55</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li><button class="buy-button">Buy</button></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="book-section" id="ux-books">
+            <h2 id="section-title"> <span>UX books</span></h2>
+                <!-- Filter Dropdown for Sorting -->
+            <div class="container">
+                <div class="book">
+                    <h3 class="title">Book 1</h3>
+                    <ul class="items">
+                        <li><img src="./assets/img/UX1.jpeg" alt="Book image"></li>
+                        <li>Author's name</li>
+                        <li>Page numbers</li>
+                        <li>Price: $40</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li><button class="buy-button">Buy</button></li>
+                    </ul>
+                </div>
+                <div class="book">
+                    <h3 class="title">Book 2</h3>
+                    <ul class="items">
+                        <li><img src="./assets/img/UX2.jpg" alt="Book image"></li>
+                        <li>Author's name</li>
+                        <li>Page numbers</li>
+                        <li>Price: $50</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li><button class="buy-button">Buy</button></li>
+                    </ul>
+                </div>
+                <div class="book">
+                    <h3 class="title">Book 3</h3>
+                    <ul class="items">
+                        <li><img src="./assets/img/UX3.png" alt="Book image"></li>
+                        <li>Author's name</li>
+                        <li>Page numbers</li>
+                        <li>Price: $65</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li><button class="buy-button">Buy</button></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="book-section">
             <h2>CSS books</h2>
             <div class="container">
                 <div class="book">
