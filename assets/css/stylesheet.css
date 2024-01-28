@@ -125,18 +125,22 @@ main {
 
 
 .filter {
-    margin-bottom: 10px;
-    margin-left: 1050px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 1100px;
+    color: #151715;
+
 }
 
-.filter{
-    color: #151715;
-    
-}
 
 .filter select {
     border-radius: 5px;
 }
+
+#html-filter{
+    margin-right: 10px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
